@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="472.0" prefWidth="755.0" style="-fx-background-color: lightblue;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.havaalani.Controller.GirişSayfasıFXMLController">
+   <children>
+      <BorderPane prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <center>
+            <Group BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fitHeight="483.0" fitWidth="755.0" layoutX="25.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@7b7a5128583b02daafe6054d38747d1c.png" />
+                     </image>
+                  </ImageView>
+                  <AnchorPane layoutX="225.0" layoutY="102.0" prefHeight="296.0" prefWidth="356.0" style="-fx-background-color: white; -fx-opacity: 0.85; -fx-background-radius: 30;">
+                     <children>
+                        <Group layoutX="-71.0" layoutY="-26.0">
+                           <children>
+                              <Button fx:id="sifreUnuttumBtn" layoutX="99.0" layoutY="248.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="293.0" style="-fx-background-color: F0F8FF;" text="Şifreni mi unuttun?" underline="true">
+                                 <font>
+                                    <Font name="DejaVu Serif Bold" size="13.0" />
+                                 </font>
+                              </Button>
+                              <Group layoutX="-36.0" layoutY="-13.0">
+                                 <children>
+                                    <Label layoutX="134.0" layoutY="152.0" text="Kullanıcı Adı: ">
+                                       <font>
+                                          <Font name="FreeMono Bold" size="22.0" />
+                                       </font>
+                                    </Label>
+                                    <Button fx:id="kayitOlBtn" layoutX="340.0" layoutY="228.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="86.0" style="-fx-background-color: F0F8FF;" text="Kayıt Ol">
+                                       <font>
+                                          <Font name="DejaVu Serif Bold" size="13.0" />
+                                       </font>
+                                    </Button>
+                                    <Button fx:id="girisYapBtn" layoutX="134.0" layoutY="228.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="199.0" style="-fx-background-color: BBBBBB;" text="Giriş Yap">
+                                       <font>
+                                          <Font name="DejaVu Serif Bold" size="13.0" />
+                                       </font>
+                                    </Button>
+                                    <Circle fill="#ababab" layoutX="148.0" layoutY="95.0" radius="12.0" stroke="#949494" strokeType="INSIDE" />
+                                    <PasswordField fx:id="sifreTxtField" layoutX="266.0" layoutY="186.0" promptText="Şifre" />
+                                    <Label layoutX="164.0" layoutY="59.0" text="Giriş Yap">
+                                       <font>
+                                          <Font size="49.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="207.0" layoutY="183.0" text="Şifre: ">
+                                       <font>
+                                          <Font name="FreeMono Bold" size="22.0" />
+                                       </font>
+                                    </Label>
+                                    <Line endX="100.0" fill="#27c9c9" layoutX="237.0" layoutY="131.0" startX="-100.0" strokeWidth="5.0" />
+                                    <TextField fx:id="kullaniciAdiTxtField" layoutX="266.0" layoutY="151.0" promptText="Kullanıcı Adı" />
+                                 </children>
+                              </Group>
+                              <Label fx:id="uyariLbl" layoutX="107.0" layoutY="281.0" prefHeight="22.0" prefWidth="293.0" textFill="#7f1eff" underline="true">
+                                 <font>
+                                    <Font name="FreeMono Bold" size="14.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </Group>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </Group>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

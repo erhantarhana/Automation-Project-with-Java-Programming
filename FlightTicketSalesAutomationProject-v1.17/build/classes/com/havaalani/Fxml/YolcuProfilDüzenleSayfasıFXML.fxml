@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="572.0" prefWidth="670.0" style="-fx-background-color: lightblue;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.havaalani.Controller.YolcuProfilDüzenleSayfasıFXMLController">
+   <children>
+      <BorderPane layoutX="-138.0" layoutY="-8.0" prefHeight="589.0" prefWidth="941.0" AnchorPane.bottomAnchor="-9.0" AnchorPane.topAnchor="-8.0">
+         <center>
+            <Group BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fitHeight="603.0" fitWidth="950.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@sky-altitude-clouds-airplane-wing-flying-soaring-Earth-677388.jpg" />
+                     </image>
+                  </ImageView>
+                  <AnchorPane layoutX="262.0" layoutY="38.0" prefHeight="496.0" prefWidth="392.0" style="-fx-background-color: white; -fx-background-radius: 60; -fx-opacity: 0.8;">
+                     <children>
+                        <Group layoutX="-47.0" layoutY="7.0">
+                           <children>
+                              <Line endX="100.0" layoutX="191.0" layoutY="184.0" startX="-100.0" />
+                              <Group layoutX="3.0" layoutY="222.0">
+                                 <children>
+                                    <Label fx:id="uyariEmailLbl" layoutX="86.0" layoutY="136.0" prefHeight="13.0" prefWidth="318.0" textFill="#8f1eff" underline="true">
+                                       <font>
+                                          <Font name="FreeMono Bold" size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <Button fx:id="editEmailBtn" layoutX="86.0" layoutY="121.0" mnemonicParsing="false" prefHeight="19.0" prefWidth="156.0" style="-fx-background-color: BBBBBB;" text="Düzenle">
+                                       <font>
+                                          <Font name="DejaVu Serif Bold" size="9.25" />
+                                       </font>
+                                    </Button>
+                                    <Label layoutX="86.0" layoutY="89.0" text="Email Adresi:">
+                                       <font>
+                                          <Font name="FreeMono Bold" size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="emailLbl" layoutX="248.0" layoutY="91.0" prefHeight="16.0" prefWidth="155.0">
+                                       <font>
+                                          <Font name="FreeMono Bold" size="16.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="yeniEmailTxtField" layoutX="247.0" layoutY="120.0" prefHeight="19.0" prefWidth="158.0" promptText="Yeni Emal Adresi">
+                                       <font>
+                                          <Font size="10.0" />
+                                       </font>
+                                    </TextField>
+                                 </children>
+                              </Group>
+                              <Group layoutY="35.0">
+                                 <children>
+                                    <Group>
+                                       <children>
+                                          <Label layoutX="90.0" layoutY="115.0" text="Kullanıcı Adı:">
+                                             <font>
+                                                <Font name="FreeMono Bold" size="20.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="kullaniciAdiLbl" layoutX="203.0" layoutY="117.0" prefHeight="16.0" prefWidth="172.0">
+                                             <font>
+                                                <Font name="FreeMono Bold" size="16.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </Group>
+                                 </children>
+                              </Group>
+                              <Line endX="100.0" layoutX="191.0" layoutY="383.0" startX="-100.0" />
+                              <Line endX="100.0" layoutX="191.0" layoutY="142.0" startX="-100.0" />
+                              <Line endX="100.0" layoutX="191.0" layoutY="263.0" startX="-100.0" />
+                              <Label layoutX="108.0" layoutY="24.0" text="Profil">
+                                 <font>
+                                    <Font name="DejaVu Serif Bold" size="26.0" />
+                                 </font>
+                              </Label>
+                              <Group layoutY="31.0">
+                                 <children>
+                                    <Label fx:id="uyariSifreLbl" layoutX="92.0" layoutY="203.0" prefHeight="13.0" prefWidth="272.0" textFill="#8f1eff" underline="true">
+                                       <font>
+                                          <Font name="FreeMono Bold" size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="92.0" layoutY="160.0" prefHeight="20.0" prefWidth="120.0" text="Şifre:">
+                                       <font>
+                                          <Font name="FreeMono Bold" size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <Button fx:id="editSifreBtn" layoutX="89.0" layoutY="186.0" mnemonicParsing="false" prefHeight="19.0" prefWidth="105.0" style="-fx-background-color: BBBBBB;" text="Değiştir">
+                                       <font>
+                                          <Font name="DejaVu Serif Bold" size="9.25" />
+                                       </font>
+                                    </Button>
+                                    <PasswordField fx:id="eskiSifreTxtField" layoutX="204.0" layoutY="163.0" prefHeight="20.0" prefWidth="162.0" promptText="Eski Şifre">
+                                       <font>
+                                          <Font size="11.0" />
+                                       </font>
+                                    </PasswordField>
+                                    <PasswordField fx:id="yeniSifreTxtField" layoutX="204.0" layoutY="183.0" prefHeight="20.0" prefWidth="162.0" promptText="Yeni Şifre">
+                                       <font>
+                                          <Font size="11.0" />
+                                       </font>
+                                    </PasswordField>
+                                 </children>
+                              </Group>
+                              <Line endX="100.0" layoutX="191.0" layoutY="108.0" startX="-100.0" />
+                              <Line endX="100.0" layoutX="191.0" layoutY="59.0" startX="-100.0" strokeWidth="3.0" />
+                              <Line endX="100.0" layoutX="191.0" layoutY="300.0" startX="-100.0" />
+                              <Group>
+                                 <children>
+                                    <Label layoutX="90.0" layoutY="115.0" text="Soy İsim: ">
+                                       <font>
+                                          <Font name="FreeMono Bold" size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="soyİsimLbl" layoutX="203.0" layoutY="117.0" prefHeight="16.0" prefWidth="172.0">
+                                       <font>
+                                          <Font name="FreeMono Bold" size="16.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </Group>
+                              <Group>
+                                 <children>
+                                    <Label fx:id="isimLbl" layoutX="157.0" layoutY="82.0" prefHeight="16.0" prefWidth="211.0">
+                                       <font>
+                                          <Font name="FreeMono Bold" size="16.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="90.0" layoutY="80.0" text="İsim: ">
+                                       <font>
+                                          <Font name="FreeMono Bold" size="20.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </Group>
+                              <Group layoutY="192.0">
+                                 <children>
+                                    <Label fx:id="idLbl" layoutX="138.0" layoutY="82.0" prefHeight="16.0" prefWidth="211.0">
+                                       <font>
+                                          <Font name="FreeMono Bold" size="16.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="90.0" layoutY="80.0" text="ID: ">
+                                       <font>
+                                          <Font name="FreeMono Bold" size="20.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </Group>
+                              <Group layoutX="43.0" layoutY="121.0">
+                                 <children>
+                                    <Group layoutX="-42.0" layoutY="202.0">
+                                       <children>
+                                          <Button fx:id="editTelefonBtn" layoutX="90.0" layoutY="91.0" mnemonicParsing="false" prefHeight="19.0" prefWidth="156.0" style="-fx-background-color: BBBBBB;" text="Düzenle">
+                                             <font>
+                                                <Font name="DejaVu Serif Bold" size="9.25" />
+                                             </font>
+                                          </Button>
+                                          <Label layoutX="88.0" layoutY="62.0" text="Telefon Numarası:">
+                                             <font>
+                                                <Font name="FreeMono Bold" size="20.0" />
+                                             </font>
+                                          </Label>
+                                          <TextField fx:id="yeniTelefonTxtField" layoutX="254.0" layoutY="91.0" prefHeight="19.0" prefWidth="144.0" promptText="Yeni Telefon Numarası">
+                                             <font>
+                                                <Font size="10.0" />
+                                             </font>
+                                          </TextField>
+                                          <Label fx:id="telefonLbl" layoutX="253.0" layoutY="71.0" prefHeight="20.0" prefWidth="147.0">
+                                             <font>
+                                                <Font name="FreeMono Bold" size="16.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </Group>
+                                    <Label fx:id="uyariTelefonLbl" layoutX="48.0" layoutY="319.0" prefHeight="13.0" prefWidth="308.0" textFill="#8f1eff" underline="true">
+                                       <font>
+                                          <Font name="FreeMono Bold" size="12.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </Group>
+                              <Circle fill="#8f1eff" layoutX="96.0" layoutY="46.0" radius="9.0" stroke="#8f1eff" strokeType="INSIDE" />
+                              <Button fx:id="kapatBtn" layoutX="360.0" layoutY="32.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="30.0" style="-fx-background-color: F0F8FF;" text="X" textFill="#e10707">
+                                 <font>
+                                    <Font name="System Bold" size="13.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </Group>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </Group>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

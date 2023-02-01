@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="556.0" prefWidth="600.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.havaalani.Controller.AdminUçuşEkleSayfasıFXMLController">
+   <children>
+      <BorderPane prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="-300.0" AnchorPane.rightAnchor="-300.0" AnchorPane.topAnchor="0.0">
+         <center>
+            <Group BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fitHeight="556.0" fitWidth="1061.0" layoutX="-194.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@maxresdefault.jpg" />
+                     </image>
+                  </ImageView>
+                  <AnchorPane layoutX="106.0" layoutY="32.0" prefHeight="493.0" prefWidth="388.0" style="-fx-background-color: white; -fx-background-radius: 50; -fx-opacity: 0.8;">
+                     <children>
+                        <Group layoutX="-60.0" layoutY="33.0">
+                           <children>
+                              <Group>
+                                 <children>
+                                    <Label layoutX="104.0" layoutY="99.0" text="Başlangıç:">
+                                       <font>
+                                          <Font name="FreeMono Bold" size="24.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="süreTxtField" layoutX="231.0" layoutY="229.0" prefHeight="25.0" prefWidth="173.0" promptText="Süre">
+                                       <font>
+                                          <Font size="11.0" />
+                                       </font>
+                                    </TextField>
+                                    <Label layoutX="104.0" layoutY="189.0" text="Kalkış Zamanı:">
+                                       <font>
+                                          <Font name="FreeMono Bold" size="24.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="104.0" layoutY="220.0" text="Süre:">
+                                       <font>
+                                          <Font name="FreeMono Bold" size="24.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="hedefTxtField" layoutX="228.0" layoutY="134.0" prefHeight="25.0" prefWidth="178.0" promptText="Hedef">
+                                       <font>
+                                          <Font size="11.0" />
+                                       </font>
+                                    </TextField>
+                                    <Label layoutX="104.0" layoutY="129.0" text="Hedef:">
+                                       <font>
+                                          <Font name="FreeMono Bold" size="24.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="idTxtField" layoutX="156.0" layoutY="72.0" prefHeight="23.0" prefWidth="252.0" promptText="ID">
+                                       <font>
+                                          <Font size="11.0" />
+                                       </font>
+                                    </TextField>
+                                    <Label layoutX="104.0" layoutY="159.0" text="Tarih:">
+                                       <font>
+                                          <Font name="FreeMono Bold" size="24.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="104.0" layoutY="66.0" text="ID:">
+                                       <font>
+                                          <Font name="FreeMono Bold" size="24.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="başlangıçTxtField" layoutX="218.0" layoutY="104.0" prefHeight="25.0" prefWidth="186.0" promptText="Başlangıç">
+                                       <font>
+                                          <Font size="11.0" />
+                                       </font>
+                                    </TextField>
+                                    <TextField fx:id="zamanTxtField" layoutX="292.0" layoutY="194.0" prefHeight="25.0" prefWidth="113.0" promptText="ss:dd">
+                                       <font>
+                                          <Font size="11.0" />
+                                       </font>
+                                    </TextField>
+                                    <TextField fx:id="tarihTxtField" layoutX="179.0" layoutY="164.0" prefHeight="25.0" prefWidth="227.0" promptText="gg/aa/yy">
+                                       <font>
+                                          <Font size="11.0" />
+                                       </font>
+                                    </TextField>
+                                 </children>
+                              </Group>
+                              <Group layoutY="134.0">
+                                 <children>
+                                    <Button fx:id="iptalBtn" layoutX="297.0" layoutY="253.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="107.0" style="-fx-background-color: f0f8ff;" text="İptal">
+                                       <font>
+                                          <Font name="DejaVu Serif Bold" size="13.0" />
+                                       </font>
+                                    </Button>
+                                    <Button fx:id="ekleBtn" layoutX="104.0" layoutY="253.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="184.0" style="-fx-background-color: BBBBBB;" text="Ekle">
+                                       <font>
+                                          <Font name="DejaVu Serif Bold" size="13.0" />
+                                       </font>
+                                    </Button>
+                                 </children>
+                              </Group>
+                              <Group layoutX="2.0" layoutY="-22.0">
+                                 <children>
+                                    <Label layoutX="127.0" layoutY="36.0" text="Uçuş Ekle">
+                                       <font>
+                                          <Font name="DejaVu Serif Bold" size="22.0" />
+                                       </font>
+                                    </Label>
+                                    <Line endX="100.0" layoutX="300.0" layoutY="70.0" startX="-100.0" strokeWidth="3.0" />
+                                    <Line endX="100.0" layoutX="204.0" layoutY="70.0" startX="-100.0" strokeWidth="3.0" />
+                                    <Circle fill="#8b1eff" layoutX="110.0" layoutY="49.0" radius="8.0" stroke="#8b1eff" strokeType="INSIDE" />
+                                 </children>
+                              </Group>
+                              <Group layoutX="3.0" layoutY="-6.0">
+                                 <children>
+                                    <Group layoutY="224.0">
+                                       <children>
+                                          <Label layoutX="127.0" layoutY="36.0" text="Bilet:">
+                                             <font>
+                                                <Font name="DejaVu Serif Bold" size="22.0" />
+                                             </font>
+                                          </Label>
+                                          <Line endX="100.0" layoutX="300.0" layoutY="70.0" startX="-100.0" strokeWidth="3.0" />
+                                          <Line endX="100.0" layoutX="204.0" layoutY="70.0" startX="-100.0" strokeWidth="3.0" />
+                                          <Circle fill="#8b1eff" layoutX="110.0" layoutY="49.0" radius="8.0" stroke="#8b1eff" strokeType="INSIDE" />
+                                       </children>
+                                    </Group>
+                                    <Group>
+                                       <children>
+                                          <TextField fx:id="ücretTxtField" layoutX="183.0" layoutY="312.0" prefHeight="25.0" prefWidth="220.0" promptText="Ücret">
+                                             <font>
+                                                <Font size="11.0" />
+                                             </font>
+                                          </TextField>
+                                          <Label layoutX="102.0" layoutY="307.0" text="Ücret:">
+                                             <font>
+                                                <Font name="FreeMono Bold" size="24.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="102.0" layoutY="337.0" text="Ceza:">
+                                             <font>
+                                                <Font name="FreeMono Bold" size="24.0" />
+                                             </font>
+                                          </Label>
+                                          <TextField fx:id="cezaTxtField" layoutX="178.0" layoutY="342.0" prefHeight="25.0" prefWidth="224.0" promptText="x%">
+                                             <font>
+                                                <Font size="11.0" />
+                                             </font>
+                                          </TextField>
+                                       </children>
+                                    </Group>
+                                 </children>
+                              </Group>
+                              <Label fx:id="uyariLbl" layoutX="105.0" layoutY="364.0" prefHeight="14.0" prefWidth="297.0" textFill="#8a30e4" underline="true">
+                                 <font>
+                                    <Font name="FreeMono Bold" size="14.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </Group>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </Group>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

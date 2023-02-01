@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<TabPane fx:id="adminTP" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="640.0" prefWidth="422.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.havaalani.Controller.AdminSayfasıFXMLController">
+  <tabs>
+    <Tab style="-fx-background-color: EE82EE;" text="Hesap">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="529.0" prefWidth="422.0" style="-fx-background-color: f0f8ff;">
+               <children>
+                  <BorderPane layoutX="15.0" layoutY="14.0" prefHeight="327.0" prefWidth="392.0" AnchorPane.bottomAnchor="266.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="14.0">
+                     <center>
+                        <Group BorderPane.alignment="CENTER">
+                           <children>
+                              <Label layoutX="63.0" layoutY="124.0" prefHeight="30.0" prefWidth="93.0" style="-fx-background-color: lightblue;" text="Çalışanlar">
+                                 <font>
+                                    <Font name="FreeMono Bold" size="20.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="62.0" layoutY="169.0" style="-fx-background-color: lightblue;" text="Yolcular">
+                                 <font>
+                                    <Font name="FreeMono Bold" size="20.0" />
+                                 </font>
+                              </Label>
+                              <Line endX="100.0" layoutX="149.0" layoutY="288.0" startX="-100.0" stroke="#0000001c" strokeWidth="2.0" />
+                              <Line endX="100.0" layoutX="149.0" layoutY="241.0" startX="-100.0" stroke="#0000001c" strokeWidth="2.0" />
+                              <Label fx:id="bilgiLbl" layoutX="65.0" layoutY="25.0" prefHeight="21.0" prefWidth="278.0" textAlignment="CENTER">
+                                 <font>
+                                    <Font name="DejaVu Serif Bold" size="18.0" />
+                                 </font>
+                              </Label>
+                              <Button fx:id="mesajBtn" layoutX="346.0" layoutY="25.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="39.0" style="-fx-background-color: BBBBBB;">
+                                 <graphic>
+                                    <ImageView fitHeight="26.0" fitWidth="36.0">
+                                       <image>
+                                          <Image url="@letter-png-big-image-png-2400.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Button>
+                              <Line endX="100.0" layoutX="119.0" layoutY="71.0" startX="-110.0" stroke="#72216a" strokeMiterLimit="5.0" strokeWidth="2.0" />
+                              <Button fx:id="kayıtlarBtn" layoutX="19.0" layoutY="259.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="29.0" style="-fx-background-color: gray;" />
+                              <Button fx:id="uçakUçuşBtn" layoutX="19.0" layoutY="213.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="29.0" style="-fx-background-color: pink;" />
+                              <Label layoutX="64.0" layoutY="258.0" style="-fx-background-color: lightblue;" text="Kayıtlar">
+                                 <font>
+                                    <Font name="FreeMono Bold" size="20.0" />
+                                 </font>
+                              </Label>
+                              <Button fx:id="çıkışBtn" layoutX="362.0" layoutY="83.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="27.0" style="-fx-background-color: BBBBBB;">
+                                 <graphic>
+                                    <ImageView fitHeight="19.0" fitWidth="20.0">
+                                       <image>
+                                          <Image url="@htd.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Button>
+                              <Button fx:id="YöneticiBtn" layoutX="19.0" layoutY="84.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="29.0" style="-fx-background-color: gray;" />
+                              <Label layoutX="61.0" layoutY="83.0" prefHeight="30.0" prefWidth="96.0" style="-fx-background-color: lightblue;" text="Yöneticiler">
+                                 <font>
+                                    <Font name="FreeMono Bold" size="20.0" />
+                                 </font>
+                              </Label>
+                              <Button fx:id="profilBtn" layoutX="9.0" layoutY="22.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="35.0" style="-fx-background-color: BBBBBB;">
+                                 <graphic>
+                                    <ImageView fitHeight="32.0" fitWidth="31.0">
+                                       <image>
+                                          <Image url="@external-content.duckduckgo.com.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Button>
+                              <Button fx:id="çalışanBtn" layoutX="19.0" layoutY="125.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="29.0" style="-fx-background-color: pink;" />
+                              <Label fx:id="pozisyonLbl" layoutX="65.0" layoutY="46.0" prefHeight="15.0" prefWidth="281.0" textFill="#5211947d">
+                                 <font>
+                                    <Font name="DejaVu Serif Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                              <Line endX="100.0" layoutX="149.0" layoutY="198.0" startX="-100.0" stroke="#0000001c" strokeWidth="2.0" />
+                              <Line endX="100.0" layoutX="299.0" layoutY="71.0" startX="-100.0" stroke="#72216a" strokeWidth="2.0" />
+                              <Button fx:id="yolcuBtn" layoutX="19.0" layoutY="170.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="29.0" style="-fx-background-color: gray;" />
+                              <Label layoutX="62.0" layoutY="212.0" style="-fx-background-color: lightblue;" text="Uçaklar &amp; Uçuşlar">
+                                 <font>
+                                    <Font name="FreeMono Bold" size="20.0" />
+                                 </font>
+                              </Label>
+                              <Line endX="100.0" layoutX="149.0" layoutY="153.0" startX="-100.0" stroke="#0000001c" strokeWidth="2.0" />
+                              <Line endX="100.0" layoutX="149.0" layoutY="112.0" startX="-100.0" stroke="#0000001c" strokeWidth="2.0" />
+                           </children>
+                        </Group>
+                     </center>
+                  </BorderPane>
+                  <ImageView fitHeight="196.0" fitWidth="422.0" layoutY="411.0">
+                     <image>
+                        <Image url="@LAX-Taxi-Service.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="erişimLbl" layoutX="29.0" layoutY="354.0" prefHeight="18.0" prefWidth="347.0" textFill="#7b11dd" underline="true">
+                     <font>
+                        <Font name="FreeMono Bold" size="17.0" />
+                     </font>
+                  </Label>
+               </children></AnchorPane>
+      </content>
+    </Tab>
+  </tabs>
+</TabPane>
